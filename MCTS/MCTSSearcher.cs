@@ -479,9 +479,9 @@ public class MCTSSearcher
         int number_of_moves = 1;
         while (!gameState.is_finished(out score))
         {
-            number_of_moves = gameState.random_play(_random);
-            if (number_of_moves == 0)
-                return 0;
+            gameState.random_play(_random);
+            //if (number_of_moves == 0)
+            //    return 0;
         }
         return score;
     }

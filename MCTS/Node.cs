@@ -43,7 +43,7 @@ public class Node : INode
     {
         Node bestChild = new Node();
         double bestUCB = double.NegativeInfinity;
-
+        
         foreach (Node child in children.ToList())
         {
             if (child.number_of_visits == 0)
